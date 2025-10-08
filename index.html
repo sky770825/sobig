@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So Big 鬆餅 - 現代化網頁</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-waffle"></i>
+                <span>So Big 鬆餅</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">首頁</a>
+                <a href="#menu" class="nav-link">菜單</a>
+                <a href="#photo-spot" class="nav-link">拍照打卡</a>
+                <a href="#about" class="nav-link">關於我們</a>
+                <a href="#contact" class="nav-link">聯絡我們</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要內容 -->
+    <main>
+        <!-- 英雄區域 -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="floating-elements">
+                    <div class="floating-icon">🌸</div>
+                    <div class="floating-icon">🍯</div>
+                    <div class="floating-icon">🧈</div>
+                    <div class="floating-icon">☕</div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">So Big</span> 鬆餅
+                </h1>
+                <p class="hero-subtitle">品味每一口溫暖與甜蜜</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">立即訂購</button>
+                    <button class="btn btn-secondary">查看菜單</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特色區域 -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🥞</div>
+                        <h3>手工製作</h3>
+                        <p>每日新鮮現做，堅持傳統工藝</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌱</div>
+                        <h3>天然食材</h3>
+                        <p>嚴選優質原料，健康無負擔</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚚</div>
+                        <h3>外送服務</h3>
+                        <p>中壢平鎮楊梅區滿千免運</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 菜單區域 -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2 class="section-title">精選菜單</h2>
+                
+                <!-- 菜單照片展示 -->
+                <div class="menu-photo-showcase">
+                    <div class="menu-photo-container">
+                        <img src="https://scontent.ftpe8-1.fna.fbcdn.net/v/t39.30808-6/540676786_122150896634801346_4806101926281576519_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=QWWcwv6z3DIQ7kNvwGDyV2j&_nc_oc=AdlE-3vnVRW5Ir66yGQeqSgyR75cPufCUJ15hP5EEBl808HFgA6luszTE8ArXCbUKIY&_nc_zt=23&_nc_ht=scontent.ftpe8-1.fna&_nc_gid=u8MgXEfgpJWCcRq2bW6OXg&oh=00_Affofwf08jJ8jvdSImEhiZCE3jgiIqvoWvHyt2Pxlftwkw&oe=68EB6EA2" 
+                             alt="So Big 鬆餅完整菜單" 
+                             class="menu-photo">
+                        <div class="menu-photo-overlay">
+                            <h3>完整菜單</h3>
+                            <p>點擊查看詳細菜單內容</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-tab="sweet">甜味鬆餅</button>
+                    <button class="tab-btn" data-tab="savory">鹹味鬆餅</button>
+                    <button class="tab-btn" data-tab="drinks">飲品</button>
+                </div>
+                
+                <div class="menu-content">
+                    <!-- 甜味鬆餅 -->
+                    <div class="tab-content active" id="sweet">
+                        <div class="menu-grid">
+                            <div class="menu-item">
+                                <div class="menu-image">🥞</div>
+                                <h4>原味鬆餅</h4>
+                                <p>鮮奶油 + 蜂蜜</p>
+                                <span class="price">$75</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🍫</div>
+                                <h4>巧克力鬆餅</h4>
+                                <p>福汎巧克力醬 + 鮮奶油</p>
+                                <span class="price">$75</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🥥</div>
+                                <h4>椰香鬆餅</h4>
+                                <p>福汎椰香奶酥 + 鮮奶油</p>
+                                <span class="price">$75</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🥜</div>
+                                <h4>花生鬆餅</h4>
+                                <p>福汎花生醬 + 鮮奶油</p>
+                                <span class="price">$75</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🍯</div>
+                                <h4>焦糖鬆餅</h4>
+                                <p>美國好時焦糖醬 + 鮮奶油</p>
+                                <span class="price">$75</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🍓</div>
+                                <h4>草莓醬鬆餅</h4>
+                                <p>草莓醬 + 鮮奶油</p>
+                                <span class="price">$75</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 鹹味鬆餅 -->
+                    <div class="tab-content" id="savory">
+                        <div class="menu-grid">
+                            <div class="menu-item">
+                                <div class="menu-image">🌽</div>
+                                <h4>玉米起司蔬菜鬆餅</h4>
+                                <p>起司 + 玉米 + 蔬菜</p>
+                                <span class="price">$95</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🐟</div>
+                                <h4>玉米鮪魚蔬菜鬆餅</h4>
+                                <p>玉米鮪魚 + 洋蔥</p>
+                                <span class="price">$105</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🌭</div>
+                                <h4>德式香腸蔬菜鬆餅</h4>
+                                <p>德式香腸 + 洋蔥 + 黃芥末醬</p>
+                                <span class="price">$130</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🍗</div>
+                                <h4>燻雞肉蔬菜鬆餅</h4>
+                                <p>燻雞肉 + 洋蔥 + 黃芥末醬</p>
+                                <span class="price">$130</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 飲品 -->
+                    <div class="tab-content" id="drinks">
+                        <div class="menu-grid">
+                            <div class="menu-item">
+                                <div class="menu-image">🍵</div>
+                                <h4>錫蘭紅茶</h4>
+                                <p>經典紅茶</p>
+                                <span class="price">$40</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🥤</div>
+                                <h4>青梅果醋</h4>
+                                <p>清爽果醋</p>
+                                <span class="price">$60</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🍃</div>
+                                <h4>茉莉綠茶</h4>
+                                <p>清香綠茶</p>
+                                <span class="price">$40</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-image">🧋</div>
+                                <h4>鮮奶茶</h4>
+                                <p>濃郁奶茶</p>
+                                <span class="price">$60</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 網美拍照打卡區 -->
+        <section id="photo-spot" class="photo-spot-section">
+            <div class="container">
+                <h2 class="section-title">網美拍照打卡區</h2>
+                <p class="section-subtitle">精心佈置的浪漫環境，讓您享受美食的同時也能拍出美美的照片</p>
+                
+                <div class="photo-spot-showcase">
+                    <div class="photo-spot-container">
+                        <img src="https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/536277398_122148985382801346_2965463583751220231_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=eowGslify2QQ7kNvwGFQw6i&_nc_oc=AdntxHUn60O8McV7eFkoZpdyL84ctI3GziG9_tWmdFvTQnCePn-yjtd4JTzugoaVqc8&_nc_zt=23&_nc_ht=scontent.ftpe8-2.fna&_nc_gid=yDpuphwYjoHAQ2phBYFoHw&oh=00_AfdXvfPmLX8vN33F0RUTmdKFuLA0Xnc4Xpudn3vStEE-Ow&oe=68EB91A4" 
+                             alt="So Big 鬆餅網美拍照打卡區" 
+                             class="photo-spot-image">
+                        <div class="photo-spot-overlay">
+                            <div class="overlay-content">
+                                <h3>浪漫拍照區</h3>
+                                <p>花卉裝飾 × 溫暖燈光 × 木質質感</p>
+                                <div class="photo-tags">
+                                    <span class="tag">#網美打卡</span>
+                                    <span class="tag">#浪漫約會</span>
+                                    <span class="tag">#美食攝影</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="photo-features">
+                    <div class="photo-feature">
+                        <i class="fas fa-camera"></i>
+                        <h4>完美光線</h4>
+                        <p>精心設計的燈光佈置，讓每張照片都美美的</p>
+                    </div>
+                    <div class="photo-feature">
+                        <i class="fas fa-seedling"></i>
+                        <h4>花卉佈置</h4>
+                        <p>浪漫的花卉裝飾，營造夢幻氛圍</p>
+                    </div>
+                    <div class="photo-feature">
+                        <i class="fas fa-home"></i>
+                        <h4>溫馨環境</h4>
+                        <p>木質質感與溫暖色調，打造舒適空間</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 關於我們 -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>關於 So Big 鬆餅</h2>
+                        <p>我們致力於提供最優質的鬆餅體驗，每一口都承載著我們的用心與堅持。從選材到製作，每一個環節都經過精心考量，只為帶給您最完美的味蕾享受。</p>
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <i class="fas fa-leaf"></i>
+                                <span>天然食材</span>
+                            </div>
+                            <div class="about-feature">
+                                <i class="fas fa-heart"></i>
+                                <span>用心製作</span>
+                            </div>
+                            <div class="about-feature">
+                                <i class="fas fa-star"></i>
+                                <span>品質保證</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="photo-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slides">
+                                    <div class="slide active">
+                                        <img src="https://scontent.ftpe8-1.fna.fbcdn.net/v/t39.30808-6/481250025_122096797862801346_6161170858548715524_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=kyf29gVzKUQQ7kNvwEPuyRZ&_nc_oc=AdnMdeUB2XfWQ-bGfAzFlhWOMwTGo3U3zLWiyYhkuXlOfqjzLn6KTmKUtx1KBRcac5s&_nc_zt=23&_nc_ht=scontent.ftpe8-1.fna&_nc_gid=mvNruG2_FWmIw1yVCQG4YQ&oh=00_AfehBQ0W7CwK9qGcA-se_tEBsZmPxHwuWQ5PusbwmFKVYQ&oe=68EB77AE" 
+                                             alt="So Big 鬆餅店內環境" class="carousel-image">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="https://scontent.ftpe8-1.fna.fbcdn.net/v/t39.30808-6/487279158_122113007006801346_8337978035082448080_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=EOkbBXmaDEIQ7kNvwFXPWxY&_nc_oc=AdkoxTNYnuc0JvjoiEs9Ewgk0F8XYS6PG0QW_x0C8VRg89DmVv1mBo1pvc1K1gbwhEQ&_nc_zt=23&_nc_ht=scontent.ftpe8-1.fna&_nc_gid=A2YpYuWmpk-WP_Bsb-lxpg&oh=00_Afe74KmHWuuK_J39oAgUJqo8OBCamhIS3-e_SmhyogNMXQ&oe=68EB9F8E" 
+                                             alt="So Big 鬆餅製作過程" class="carousel-image">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/484986014_122106214850801346_5794812603431224797_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VYvJ29DMkWAQ7kNvwGHZK0U&_nc_oc=Adll5fqtWWPHKHNwYYTzwGYOCGfPpaBcXVbKZ9hkRyTNSirPMi0oQJ04Pyx7e9484i0&_nc_zt=23&_nc_ht=scontent.ftpe8-2.fna&_nc_gid=S4Co1L1-krVm3BBRnUA3eA&oh=00_Afc8-5PIk_m8dTL--EWM7Bmy7dzDyyjZ7vG3IB3ohWEEoA&oe=68EB9042" 
+                                             alt="So Big 鬆餅美食展示" class="carousel-image">
+                                    </div>
+                                </div>
+                                
+                                <!-- 輪播控制按鈕 -->
+                                <button class="carousel-btn carousel-prev" aria-label="上一張">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn carousel-next" aria-label="下一張">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                
+                                <!-- 輪播指示器 -->
+                                <div class="carousel-indicators">
+                                    <button class="indicator active" data-slide="0" aria-label="第1張照片"></button>
+                                    <button class="indicator" data-slide="1" aria-label="第2張照片"></button>
+                                    <button class="indicator" data-slide="2" aria-label="第3張照片"></button>
+                                </div>
+                                
+                                <!-- 輪播資訊 -->
+                                <div class="carousel-info">
+                                    <h4>店內環境</h4>
+                                    <p>溫馨舒適的用餐空間</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 地圖區域 - 移到聯絡我們前面 -->
+    <section class="map-section-main">
+        <div class="container">
+            <h2 class="section-title">如何找到 So Big 鬆餅</h2>
+            <div class="map-container">
+                <div class="map-image-container">
+                    <img src="images/地點圖.jpg" alt="So Big 鬆餅地點指引圖" class="map-image" id="map-image">
+                    <div class="map-overlay">
+                        <div class="map-info">
+                            <h4>📍 詳細位置指引</h4>
+                            <p>桃園市中壢區新中北路360號<br>活動中心地下一樓</p>
+                            <div class="zoom-hint">
+                                <i class="fas fa-search-plus"></i>
+                                點擊放大查看
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="google-map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!4v1759885573321!6m8!1m7!1sv8obMcOoCBt5U7OKvdB0mg!2m2!1d24.95930356200535!2d121.2414715731438!3f191.17054740733687!4f18.668674886178934!5f0.7820865974627469" 
+                        class="google-map"
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-actions">
+                        <a href="https://maps.google.com/?q=桃園市中壢區新中北路360號" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-external-link-alt"></i>
+                            在 Google Maps 中開啟
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡我們 - 移到地圖後面 -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">聯絡我們</h2>
+            
+            <!-- 四欄水平布局的聯絡資訊卡片 -->
+            <div class="contact-cards-horizontal">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>電話訂購</h4>
+                        <p>立即撥打電話訂購</p>
+                        <a href="tel:0989108080" class="contact-btn phone-btn">
+                            <i class="fas fa-phone"></i>
+                            0989-108080
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-line"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>LINE官方帳號</h4>
+                        <p>加入官方LINE獲得最新優惠</p>
+                        <a href="https://lin.ee/KJkPs32" target="_blank" class="contact-btn line-btn">
+                            <i class="fab fa-line"></i>
+                            加入官方LINE
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>店鋪地址</h4>
+                        <p>歡迎到店品嚐</p>
+                        <div class="address-info">
+                            <strong>桃園市中壢區新中北路360號</strong><br>
+                            <span>(活動中心地下一樓)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h4>營業時間</h4>
+                        <p>每日新鮮製作</p>
+                        <div class="hours-info">
+                            <strong>週一至週日</strong><br>
+                            <span>09:00 - 21:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 簡化頁腳 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <p>&copy; 2025 So Big 鬆餅. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 圖片放大模態框 -->
+    <div id="image-modal" class="image-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-image" src="" alt="放大圖片">
+            <div class="modal-caption">
+                <h4>📍 So Big 鬆餅詳細位置指引</h4>
+                <p>桃園市中壢區新中北路360號 (活動中心地下一樓)</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
