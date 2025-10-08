@@ -499,22 +499,59 @@ function initPhotoCarousel() {
 // 圖片放大功能
 function initImageModal() {
     const mapImage = document.getElementById('map-image');
+    const menuPhoto = document.querySelector('.menu-photo'); // 菜單照片
     const modal = document.getElementById('image-modal');
     const modalImage = document.getElementById('modal-image');
     const modalClose = document.querySelector('.modal-close');
+    const modalCaption = document.querySelector('.modal-caption');
 
-    if (!mapImage || !modal || !modalImage || !modalClose) {
+    if (!modal || !modalImage || !modalClose || !modalCaption) {
         console.log('圖片放大功能元素未找到');
         return;
     }
 
-    // 點擊圖片打開模態框
-    mapImage.addEventListener('click', () => {
-        modalImage.src = mapImage.src;
-        modalImage.alt = mapImage.alt;
+    // 打開模態框的通用函數
+    function openModal(imageSrc, imageAlt, title, description) {
+        modalImage.src = imageSrc;
+        modalImage.alt = imageAlt;
+        modalCaption.querySelector('h4').textContent = title;
+        modalCaption.querySelector('p').textContent = description;
         modal.classList.add('show');
         document.body.style.overflow = 'hidden'; // 防止背景滾動
-    });
+    }
+
+    // 點擊地圖圖片打開模態框
+    if (mapImage) {
+        mapImage.addEventListener('click', () => {
+            openModal(
+                mapImage.src,
+                mapImage.alt,
+                '📍 So Big 鬆餅詳細位置指引',
+                '桃園市中壢區新中北路360號 (活動中心地下一樓)'
+            );
+        });
+    }
+
+    // 點擊菜單照片或容器打開模態框
+    const menuPhotoContainer = document.querySelector('.menu-photo-container');
+    
+    if (menuPhoto) {
+        const openMenuModal = () => {
+            openModal(
+                menuPhoto.src,
+                menuPhoto.alt,
+                '🍴 So Big 鬆餅完整菜單',
+                '查看詳細菜單內容與價格'
+            );
+        };
+        
+        menuPhoto.addEventListener('click', openMenuModal);
+        
+        // 也讓容器可點擊
+        if (menuPhotoContainer) {
+            menuPhotoContainer.addEventListener('click', openMenuModal);
+        }
+    }
 
     // 關閉模態框
     function closeModal() {
